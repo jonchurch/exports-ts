@@ -1,0 +1,15 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Example of an app, which consumes a package that uses exports field",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "jonchurch",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.1.5"
+  }
+}
