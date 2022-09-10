@@ -4,10 +4,21 @@
   "description": "Example of a package that uses exports field",
   "main": "./lib/index.js",
   "exports": {
-    ".": "./lib/index.js",
-    "./submodule": "./lib/submodule.js"
+    ".": {
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./submodule": {
+      "types": "./lib/submodule.d.ts",
+      "default": "./lib/submodule.js"
+    }
   },
-  "types": "./lib",
+  "types": "./lib/index.d.ts",
+  "typesVersions": {
+    ">=4.2": {
+      "*": ["./lib/*"]
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
