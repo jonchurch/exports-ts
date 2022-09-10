@@ -1,7 +1,7 @@
 {
   "extends": "../config/ts-base.json",
-  "compilerOptions": {
-    "outDir": "./lib"
+  "compileroptions": {
+    "outdir": "./lib"
   },
   "include": ["src/**/*.ts"]
 }
