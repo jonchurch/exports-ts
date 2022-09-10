@@ -1,16 +1,20 @@
 {
   "name": "package",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "Example of a package that uses exports field",
   "main": "index.js",
   "exports": {
-    ".": "./src/index.js",
-    "./submodule": "./src/submodule.js"
+    ".": "./lib/index.js",
+    "./submodule": "./lib/submodule.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "jonchurch",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.1.5"
+  }
 }
