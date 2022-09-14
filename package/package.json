@@ -4,14 +4,8 @@
   "description": "Example of a package that uses exports field",
   "main": "./lib/index.js",
   "exports": {
-    ".": {
-      "types": "./lib/index.d.ts",
-      "default": "./lib/index.js"
-    },
-    "./submodule": {
-      "types": "./lib/submodule.d.ts",
-      "default": "./lib/submodule.js"
-    }
+    ".": "./lib/index.js",
+    "./submodule": "./lib/submodule.js"
   },
   "types": "./lib/index.d.ts",
   "typesVersions": {
